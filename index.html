@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>996摸鱼</title>
+<style>
+#main {
+    text-align: center; /*让div内部文字居中*/
+    background-color: #fff;
+    border-radius: 20px;
+    width: 720;
+    height: 350px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+</style>
+</head>
+
+<body>
+    <div id="main">
+        <h2 id="saying"></h2>
+    </div>
+</body>
+<script type="text/javascript">
+    var sayings = [];
+    sayings.push("一杯茶一包烟，一个bug改一天");
+    sayings.push("年少不知编制贵，老来被裁读垂泪。不知当初狂有罪，只看年薪自陶醉。");
+    sayings.push("十年生死两茫茫，写程序，到天亮。千行代码，Bug何处藏。 纵使上线又怎样，朝令改，夕断肠。 领导每天新想法，天天改，日日忙。相顾无言，惟有泪千行。每晚灯火阑珊处，夜难寐，又加班。");
+    sayings.push("变秃了，也变强了。");
+
+    var index = Math.floor(Math.random() * sayings.length);
+    document.getElementById("saying").innerHTML = sayings[index];
+</script>
+</html>
